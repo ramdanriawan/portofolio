@@ -2,12 +2,6 @@ hr {
     border: 3px solid #666;
 }
 
-.hr-start-light {
-    width: 200px; 
-    border: 2px solid #666;
-    text-align: center;
-    border: 2px solid #666;
-}
 
 body {
     height: 1000px;
@@ -31,6 +25,10 @@ section#about{
     background-color: #2C3E50;
 }
 
+.bgBiruLebihTua {
+    background-color: #1A252F;
+}
+
 .navbar a {
     color: white !important;
 }
@@ -38,10 +36,83 @@ section#about{
 .navbar a.nav-link:hover {
     background-color: rgba(0, 0, 0, 0.5) !important;
     padding-left: 5px;
+    margin-left: -5px;
+    border-radius: 5px;
 }
 
-/* .hr-start-light::after { 
+.scroll-to-top {
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.scroll-to-top:hover { 
+    color: #666 !important;
+}
+
+a.scroll-to-target:visited {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-portofolio .thumbnail {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.img-portofolio .thumbnail img:hover {
+    transform: scale(1.1, 1.1);
+    transition: transform .5s ease-out;
+    cursor: pointer;
+}
+
+.img-portofolio .thumbnail::after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.img-portofolio .thumbnail:hover::after {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    z-index: -1;
+    transition: background-color 0.5s, z-index .5s;
+}
+
+footer .media-sosial button {
+    border-radius: 50%;
+}
+
+.hr-start-light {
+    width: 200px; 
+    border: 2px solid #666;
+    text-align: center;
+    border: 2px solid #666;
+    position: relative;
+
+}
+
+.hr-start-light::after { 
+    position: absolute;
     content: '*';
     font-weight: bold;
-    font-size: 50px;
-} */
+    font-size: 25px;
+    text-align: center;
+    line-height: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #18BC9C;
+    top: -15px;
+}
+
+#contact hr.hr-start-light::after {
+    background-color: white;
+}
