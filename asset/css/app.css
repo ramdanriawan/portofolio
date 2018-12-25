@@ -116,3 +116,23 @@ footer .media-sosial button {
 #contact hr.hr-start-light::after {
     background-color: white;
 }
+
+.thumbnail {
+    opacity: 0;
+}
+
+.thumbnail.muncul {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.navbar-transparent {
+    opacity: 0.9;
+    color: #eee;
+    transition: opacity 0.5s linear;
+}
+
+.navbar-transparent-balik {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
